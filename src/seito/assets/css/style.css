@@ -132,6 +132,46 @@ button {
 }
 
 /*
+hero
+*/
+/* hero */
+.hero {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero strong {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 120px;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.hero video {
+  position: absolute;
+  z-index: 1;
+  width: auto;
+  height: 130%;
+}
+
+.hero .hero-particles {
+  position: absolute;
+  z-index: 2;
+  width: auto;
+  height: 130%;
+}
+
+/*
 * About
 */
 .about {
