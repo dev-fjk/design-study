@@ -10,25 +10,91 @@ body {
     color: #333;
 }
 
+label, input, textarea, select, button {
+    cursor: pointer;
+}
+
+button {
+    border: 0;
+}
+
 /*
 * section
 */
 .section{
     padding: 30px 15px;
+
+    .section-headline {
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0 0 40px;
+      }
+
+      .section-button {
+        margin-top: 40px;
+        text-align: center;
+      }
 }
+
 .section-secoundary {
     background: #efefef;
 }
-.section-headline{
-    text-align: center;
-    font-size: 40px;
+
+/*
+* .select, .input .radio .textarea
+*/
+.select{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+
+
+}
+.input{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+}
+.radio{
+    margin: 0 10px;
+}
+.textarea{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+    min-height: 100px;
+}
+
+/*
+* Button
+*/
+.button {
+    display: inline-block;
+    color: #fff;
     font-weight: bold;
-    margin: 0 0 40px;
-}
-.section-button {
-    margin-top: 40px;
+    background-color: #333;
     text-align: center;
+    padding: 15px 60px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 #bbb;
+    transition: box-shadow .0.5s;
+
+    &.button-submission {
+        background: #92d3ca;
+    }
+
 }
+
+.button:hover {
+    box-shadow: 0 0 0 #bbb;
+}
+
+
 
 /*
 * grid
@@ -40,21 +106,23 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .grid-item {
     list-style: none;
 }
+
 .grid-col-2 {
     .grid-item {
         width: 50%;
     }
-
 }
+
 .grid-col-3 {
     .grid-item {
         width: 33%;
     }
-
 }
+
 .grid-col-4 {
     .grid-item {
         width: 25%;
@@ -84,14 +152,16 @@ body {
 */
 .feature{
     text-align: center;
+
+    .feature-headline{
+        font-weight: bold;
+        margin: 0 0 20px;
+    }
+    .feature-img{
+        margin: 0 0 20px;
+    }
 }
-.feature-headline{
-    font-weight: bold;
-    margin: 0 0 20px;
-}
-.feature-img{
-    margin: 0 0 20px;
-}
+
 
 /*
 * card
@@ -108,7 +178,6 @@ body {
 }
 .card-link:hover {
     background-color: #eee;
-
 }
 .card-label {
     position: absolute;
@@ -153,22 +222,21 @@ body {
 }
 
 /*
-* Button
+* form
 */
-.button {
-    display: inline-block;
-    color: #fff;
-    font-weight: bold;
-    background-color: #333;
-    text-align: center;
-    padding: 15px 60px;
-    text-decoration: none;
-    border-radius: 5px;
-    box-shadow: 5px 5px 0 #bbb;
-    transition: box-shadow .0.5s;
+.form-table {
+    margin: 0 auto;
+    th {
+        padding: 10px;
+        text-align: left;
+    }
 
+    td {
+        padding: 10px;
+    }
 }
 
-.button:hover {
-    box-shadow: 0 0 0 #bbb;
+.form-button {
+    text-align: center;
+    margin: 16px;
 }

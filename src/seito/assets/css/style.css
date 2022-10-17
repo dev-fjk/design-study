@@ -8,6 +8,14 @@ body {
   color: #333;
 }
 
+label, input, textarea, select, button {
+  cursor: pointer;
+}
+
+button {
+  border: 0;
+}
+
 /*
 * section
 */
@@ -15,20 +23,78 @@ body {
   padding: 30px 15px;
 }
 
-.section-secoundary {
-  background: #efefef;
-}
-
-.section-headline {
+.section .section-headline {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
   margin: 0 0 40px;
 }
 
-.section-button {
+.section .section-button {
   margin-top: 40px;
   text-align: center;
+}
+
+.section-secoundary {
+  background: #efefef;
+}
+
+/*
+* .select, .input .radio .textarea
+*/
+.select {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  min-width: 500px;
+}
+
+.input {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  min-width: 500px;
+}
+
+.radio {
+  margin: 0 10px;
+}
+
+.textarea {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  min-width: 500px;
+  min-height: 100px;
+}
+
+/*
+* Button
+*/
+.button {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  background-color: #333;
+  text-align: center;
+  padding: 15px 60px;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 0 #bbb;
+          box-shadow: 5px 5px 0 #bbb;
+  -webkit-transition: -webkit-box-shadow 0 0.5s;
+  transition: -webkit-box-shadow 0 0.5s;
+  transition: box-shadow 0 0.5s;
+  transition: box-shadow 0 0.5s, -webkit-box-shadow 0 0.5s;
+}
+
+.button.button-submission {
+  background: #92d3ca;
+}
+
+.button:hover {
+  -webkit-box-shadow: 0 0 0 #bbb;
+          box-shadow: 0 0 0 #bbb;
 }
 
 /*
@@ -91,12 +157,12 @@ body {
   text-align: center;
 }
 
-.feature-headline {
+.feature .feature-headline {
   font-weight: bold;
   margin: 0 0 20px;
 }
 
-.feature-img {
+.feature .feature-img {
   margin: 0 0 20px;
 }
 
@@ -178,27 +244,23 @@ body {
 }
 
 /*
-* Button
+* form
 */
-.button {
-  display: inline-block;
-  color: #fff;
-  font-weight: bold;
-  background-color: #333;
-  text-align: center;
-  padding: 15px 60px;
-  text-decoration: none;
-  border-radius: 5px;
-  -webkit-box-shadow: 5px 5px 0 #bbb;
-          box-shadow: 5px 5px 0 #bbb;
-  -webkit-transition: -webkit-box-shadow 0 0.5s;
-  transition: -webkit-box-shadow 0 0.5s;
-  transition: box-shadow 0 0.5s;
-  transition: box-shadow 0 0.5s, -webkit-box-shadow 0 0.5s;
+.form-table {
+  margin: 0 auto;
 }
 
-.button:hover {
-  -webkit-box-shadow: 0 0 0 #bbb;
-          box-shadow: 0 0 0 #bbb;
+.form-table th {
+  padding: 10px;
+  text-align: left;
+}
+
+.form-table td {
+  padding: 10px;
+}
+
+.form-button {
+  text-align: center;
+  margin: 16px;
 }
 /*# sourceMappingURL=style.css.map */
