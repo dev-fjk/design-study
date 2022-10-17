@@ -132,9 +132,62 @@ button {
 }
 
 /*
+header
+*/
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.header-logo a {
+  display: block;
+  color: transparent;
+}
+
+.header-navlist {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-navlist .header-navitem a {
+  display: block;
+  padding: 15px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-color .25s;
+  transition: border-color .25s;
+}
+
+.header-navlist .header-navitem a:hover {
+  border-bottom: 2px solid #333;
+}
+
+/*
 hero
 */
-/* hero */
 .hero {
   width: 100vw;
   height: 100vh;
