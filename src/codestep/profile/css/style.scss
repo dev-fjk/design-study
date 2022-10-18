@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/*
+* Base Style
+*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+label,
+input,
+textarea,
+select,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin-top: 10px;
+    padding: 0 4%;
+    text-align: center;
+}
+
+header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .site-title {
+        width: 120px;
+    }
+
+    ul {
+
+        display: flex;
+        text-align: center;
+        padding-top: 10px;
+
+        li {
+            margin-left: 30px;
+
+            a {
+                color: #333;
+            }
+        }
+    }
+}
+
+#mainvisual {
+    margin-bottom: 80px;
+
+    img {
+        width: 100%;
+        max-width: 1920px;
+        height: 600px;
+        object-fit: cover;
+    }
+}
